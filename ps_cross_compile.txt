@@ -1,8 +1,9 @@
-Code for cross-compilation:
+Code for cross-compilation in Powershell:
 
 Example to compile for linux from a Windows machine from powershell:
-SET $GOOS = linux
-SET $GOARCH = amd64
+$env:GOOS = "linux"
+
+read variable: $env:GOOS
 
 $GOOS	$GOARCH
 android	arm
