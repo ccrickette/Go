@@ -1,0 +1,5 @@
+Deploy a binary on linux box
+
+From SSH execute: chmod u+x {program_name}
+
+Next start the service/program with ./{program_name}
