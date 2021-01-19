@@ -1,3 +1,40 @@
+HOW TO RUN AND COMPILE THE CODE TO AN .EXE (binary)
+
+You need to have Go installed. (golang.org) then to test it open a terminal/cmd and type "go" you should get some information if not. Recheck installation.const
+
+There are different ways to run Go code. While quickly developing it is better to just run the following command in your terminal or IDE:
+
+"Go run whatever_the_name_of_your_program.go"
+
+It will then run in your console.  If you want to create an executable and compile to machine code to deploy its very similar, but instead of RUN use "build":
+
+"Go build whatever_the_name_of_your_program.go"
+
+NOTE: if you want to deploy on other environments you need to set an environment variblae on your computer AND THEN run the  build command. 
+REMBMER to set it back if you are working on your local machine!
+
+For  mac for example run the following code in your terminal console or cmd:
+
+1. $ GOOS=darwin GOARCH=386
+
+2. Go build whatever_the_name_of_your_program.go
+
+
+Then if you want windows exe:
+
+1. $ GOOS=windows GOARCH=amd64
+
+2. Go build whatever_the_name_of_your_program.go
+
+
+Sometimes Windows gives a problem so try the following:
+1. $env:GOOS = "linux"
+
+2. read variable: $env:GOOS
+
+3. Go build whatever_the_name_of_your_program.go
+
+
 Code for cross-compilation in Powershell:
 
 Example to compile for linux from a Windows machine from powershell:
